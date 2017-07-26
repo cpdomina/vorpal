@@ -9,10 +9,10 @@ and build system from Indeed's [vowpal-wabbit-java](https://github.com/indeedeng
 ### Usage
 
 ```
-VWScalarsLearner vw = VWLearners.create("--oaa 3 --holdout_period 9 --passes 10 --cache_file vw.cache --loss_function=logistic --probabilities";
+VWScalarsLearner vw = VWLearners.create("--oaa 3 --holdout_period 9 --passes 10 --cache_file vw.cache --loss_function=logistic --probabilities");
 
 vw.learn("1 | c d e");
-float[] pred = vw.predict("1 | c d e");
+float[] pred = vw.predict("c d e");
 
 vw.saveModel("model.vw");
 vw.close();
