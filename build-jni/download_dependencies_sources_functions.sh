@@ -15,8 +15,8 @@ download_vowpal_wabbit_if_needed() {
 
 download_boost_if_needed() {
   if [ ! -d "$BOOST_SOURCE_DIR" ]; then
-    wget --no-check-certificate -q -O "$TRANSIENT_DIR/boost_1_61_0.tar.gz" http://sourceforge.net/projects/boost/files/boost/1.61.0/boost_1_61_0.tar.gz/download
-    tar -xzf "$TRANSIENT_DIR/boost_1_61_0.tar.gz"
-    mv boost_1_61_0 "$BOOST_SOURCE_DIR"  
+    wget --no-check-certificate -q -O "$TRANSIENT_DIR/boost_1_67_0.tar.gz" http://sourceforge.net/projects/boost/files/boost/1.67.0/boost_1_67_0.tar.gz/download
+    tar -xzf "$TRANSIENT_DIR/boost_1_67_0.tar.gz"
+    mv boost_1_67_0 "$BOOST_SOURCE_DIR"
   fi
 }
